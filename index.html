@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YANA App - You Are Not Alone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nosifer&family=Butcherman&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="screen active">
+        <div class="splash-content">
+            <h1 class="splash-title">You Are Not Alone.....</h1>
+            <div class="creator-credit">Created by Luv Thapa</div>
+        </div>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home-screen" class="screen">
+        <div class="bloody-background">
+            <div class="blood-drip drip-1"></div>
+            <div class="blood-drip drip-2"></div>
+            <div class="blood-drip drip-3"></div>
+            <div class="blood-drip drip-4"></div>
+            <div class="blood-drip drip-5"></div>
+            <div class="blood-drip drip-6"></div>
+            <div class="bloody-splatter splatter-1"></div>
+            <div class="bloody-splatter splatter-2"></div>
+            <div class="bloody-splatter splatter-3"></div>
+            <div class="bloody-splatter splatter-4"></div>
+            <div class="bloody-splatter splatter-5"></div>
+            <!-- Footer with license link -->
+<div id="app-footer" class="app-footer">
+    <button id="license-btn" class="footer-link-btn">© 2025 Luv Thapa • License</button>
+</div>
+
+        </div>
+        
+        <div class="home-container">
+            <div class="scary-eye-container">
+                <svg class="scary-eye" width="80" height="50" viewBox="0 0 80 50">
+                    <ellipse cx="40" cy="25" rx="35" ry="22" fill="#000" stroke="#ff0000" stroke-width="1"/>
+                    <circle cx="40" cy="25" r="15" fill="#ff0000" class="home-eye-iris"/>
+                    <circle cx="40" cy="25" r="8" fill="#000" class="home-eye-pupil"/>
+                    <circle cx="44" cy="21" r="2" fill="#fff" opacity="0.8"/>
+                </svg>
+            </div>
+            <h1 class="home-title">YANA</h1>
+            <div class="button-container">
+                <button id="start-btn" class="horror-btn">START</button>
+                <button id="about-btn" class="horror-btn">ABOUT</button>
+            </div>
+        </div>
+        
+        <audio id="whisper-audio" preload="auto">
+            <source src="https://ia601007.us.archive.org/24/items/horror-scream-with-echo-sound-effect_202507/Horror-scream-with-echo-sound-effect.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="whisper-audio2" preload="auto">
+            <source src="https://ia902905.us.archive.org/30/items/scary-horror-music-351315_20250723/scary-horror-music-351315.mp3" type="audio/mpeg">
+            <!-- Add your whispering ghost sound file here -->
+            <!-- <source src="path-to-your-whisper-sound.mp3" type="audio/mpeg"> -->
+        </audio>
+    </div>
+
+    <!-- Chat Page -->
+    <div id="chat-screen" class="screen">
+        <div class="chat-container">
+            <div class="back-arrow" id="back-arrow">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <path d="M20 5 L5 20 L20 35 L15 30 L10 20 L15 10 Z" fill="#ff0000" stroke="#800000" stroke-width="2"/>
+                    <circle cx="25" cy="15" r="2" fill="#ff0000" opacity="0.7"/>
+                    <circle cx="30" cy="25" r="1.5" fill="#ff0000" opacity="0.5"/>
+                </svg>
+            </div>
+            <h1 class="chat-title">YANA</h1>
+            
+            <div class="ghost-container">
+                <div class="ghost-eyes-only">
+                    <svg class="ghost-eyes" width="200" height="100" viewBox="0 0 200 100">
+                        <!-- Left Eye Socket -->
+                        <circle cx="60" cy="50" r="25" fill="#000" class="eye-socket"/>
+                        <circle cx="60" cy="50" r="15" fill="#ff0000" class="eye-iris" id="left-iris"/>
+                        <circle cx="60" cy="50" r="8" fill="#000" class="eye-pupil" id="left-pupil"/>
+                        
+                        <!-- Right Eye Socket -->
+                        <circle cx="140" cy="50" r="25" fill="#000" class="eye-socket"/>
+                        <circle cx="140" cy="50" r="15" fill="#ff0000" class="eye-iris" id="right-iris"/>
+                        <circle cx="140" cy="50" r="8" fill="#000" class="eye-pupil" id="right-pupil"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="chat-box">
+                <div class="chat-messages" id="chat-messages">
+                    <div class="system-message">The spirits are listening...</div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <input type="text" id="chat-input" placeholder="Speak to the darkness..." maxlength="200">
+                    <button id="send-btn" class="send-btn">SEND</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- License Modal -->
+<div id="license-modal" class="modal">
+    <div class="modal-content">
+        <span id="license-close" class="close-btn">&times;</span>
+        <h2>License & Terms</h2>
+        <p>This horror app is created by <strong>Luv Thapa</strong> and is intended for users aged 18 and above.</p>
+        <p>All content, including design, code, and sounds, are protected under copyright.</p>
+        <p>Unauthorized copying, reuse, or distribution is strictly prohibited.</p>
+        <p>This project is for personal or educational use only. Not open for commercial reuse.</p>
+        <p style="font-size: 0.8rem; color: #777;">© 2025 Luv Thapa. All Rights Reserved.</p>
+    </div>
+</div>
+
+    <!-- About Modal -->
+    <div id="about-modal" class="modal">
+        <audio id="typing-audio" src="https://dn721901.ca.archive.org/0/items/type-writer-53735/type-writer-53735.mp3" loop></audio>
+        <div class="modal-content">
+            <span id="about-close" class="close-btn">&times;</span>
+            <h2>About YANA</h2>
+            <p id="about-line1"></p>
+            <p id="about-line2"></p>
+            <p id="about-line3"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
