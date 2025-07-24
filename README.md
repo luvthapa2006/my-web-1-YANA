@@ -45,7 +45,10 @@ Simply open `index.html` in any modern web browser.
 
 ## 📸 Preview
 
-![Preview Screenshot](https://user-images.githubusercontent.com/your-screenshot-placeholder.png)
+<img width="1881" height="848" alt="preview 1" src="https://github.com/user-attachments/assets/85eb0a64-8c0c-4073-a115-02dddd7a6ae6" />
+<img width="1897" height="878" alt="preview 2" src="https://github.com/user-attachments/assets/cb015a43-fcf1-4ae5-9b5f-a5135a61bea7" />
+
+
 
 ---
 
